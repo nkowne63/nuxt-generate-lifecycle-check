@@ -8,6 +8,7 @@
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
         <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
         <nuxt-link :to="'/'" class="button--grey">Page 1</nuxt-link>
+        <nuxt-link :to="'/test/4'" class="button--grey">Move To Dynamic</nuxt-link>
       </div>
       <p>msg is: {{msg}}</p>
     </div>
@@ -38,7 +39,7 @@ export default {
     console.log("created");
   },
   async asyncData() {
-    await sleep(1000);
+    await sleep(10000);
     console.log("asyncData");
   },
   mounted() {
